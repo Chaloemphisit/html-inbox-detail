@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+
+  font-family: "Noto Sans Thai", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7d8999;
+}
+
+p {
+  margin: 0;
+}
+
+.root-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inbox-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1e0f6;
+  height: 304px;
+}
+
+.inbox-header .header-icon {
+  margin-top: -40px;
+  width: 120px;
+}
+
+.inbox-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: -40px;
+}
+
+.inbox-container .inbox-content {
+  width: 500px;
+  min-height: 100px;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid #dfe6ec;
+}
+
+.inbox-content .inbox-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #002d63;
+}
+
+.inbox-content .inbox-description {
+}
+
+.inbox-content-detail {
+  margin-top: 16px;
+}
+
+.inbox-content-detail {
+  color: #002d63;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #F68B1F;
+  border-color: #F68B1F;
+  border-radius: 500px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #F68B1F;
+  border-color: #F68B1F;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  /* box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5) */
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #6d6d6d;
+  border-color: #6d6d6d
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #F68B1F;
+  border-color: #F68B1F
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem #F68B1F
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+  .inbox-container .inbox-content {
+    width: 100%;
+    margin: 16px;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
