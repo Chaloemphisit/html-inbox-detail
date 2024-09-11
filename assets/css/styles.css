@@ -109,6 +109,23 @@ p {
     width: 100%;
     margin: 16px;
   }
+
+  .inbox-header {
+    height: 180px;
+  }
+  
+  .inbox-header .header-icon {
+    margin-top: -40px;
+    width: 80px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .inbox-content .inbox-title {
+    font-size: 18px;
+  }
 }
 
 /* Medium devices such as tablets (768px and up) */
