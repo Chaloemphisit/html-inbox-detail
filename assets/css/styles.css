@@ -6,6 +6,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #7d8999;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 p {
