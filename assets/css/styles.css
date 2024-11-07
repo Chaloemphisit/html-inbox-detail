@@ -1,0 +1,185 @@
+/* Basic page styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+  font-family: "Noto Sans Thai", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7d8999;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+p {
+  margin: 0;
+}
+
+/* Main container */
+.root-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensures content at least fills the viewport height */
+}
+
+/* Content area */
+.content {
+  flex: 1; /* Takes up remaining space above the action bar */
+  padding: 20px;
+  max-width: 720px;
+  padding: 32px;
+  max-width: 720px;
+  padding: 32px;
+  
+  box-sizing: content-box;
+  justify-content: center;
+  
+}
+
+/* Action bar */
+.action-bar {
+  position: sticky;
+  bottom: 0;
+  padding: 24px 0;
+  background-color: #FFF;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  box-shadow: 0px -4px 0px 0px rgba(76, 87, 101, 0.06), 0px -2px 0px 0px rgba(0, 0, 0, 0.04);
+
+}
+
+.inbox-cover {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.inbox-cover img {
+  display: block;
+  width: 100%; /* image fills the full width of the frame */
+  height: 280px; /* fix the image height */
+  object-fit: cover; /* cover ensures the image fits within its container without distortion */
+  border-radius: 24px; /* round the image itself */
+}
+
+.inbox-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.inbox-content {
+  width: 100%;
+  padding-top: 24px;
+}
+
+.color-navy {
+  color: #002d63;
+}
+
+.inbox-description {
+  margin-top: 8px;
+}
+
+.divider {
+  background: rgba(243, 247, 248, 1);
+  padding: 4px 0;
+  margin: 24px 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #F68B1F;
+  border-color: #F68B1F;
+  border-radius: 500px;
+  width: 100%;
+  max-width: 432px;
+  margin: 0 16px;
+  height: 48px;
+}
+
+.text-grey {
+  color: #7D8999;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #F68B1F;
+  border-color: #F68B1F;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  /* box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5) */
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #6d6d6d;
+  border-color: #6d6d6d
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #F68B1F;
+  border-color: #F68B1F
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem #F68B1F
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+  .inbox-container .inbox-content {
+    width: 100%;
+    margin: 16px;
+  }
+
+  .inbox-header {
+    height: 180px;
+  }
+  
+  .inbox-header .header-icon {
+    margin-top: -40px;
+    width: 80px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .inbox-content .inbox-title {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
